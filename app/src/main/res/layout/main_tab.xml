@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:out="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/main_top_text"
+            android:textColor="@color/purple"
+            android:textSize="28sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_purple" />
+    <TextView
+        android:id="@+id/date_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/purple"
+        android:textSize="13sp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_tab_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/tab_bg"
+        android:orientation="horizontal">
+
+        <com.bestcode95.staffmanage.utils.BottomTab
+            android:id="@+id/main_tab_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            out:colors="@color/light_purple"
+            out:text="@string/main_bottom_tab1"
+            out:text_size="20sp" />
+
+        <ImageView
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/purple" />
+
+        <com.bestcode95.staffmanage.utils.BottomTab
+            android:id="@+id/main_tab_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            out:colors="@color/light_purple"
+            out:text="@string/main_bottom_tab2"
+            out:text_size="20sp" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

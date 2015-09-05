@@ -1,6 +1,17 @@
 <resources>
-    <string name="app_name">StaffManage</string>
+    <string name="app_name">员工管理</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <!-- 登录界面-->
+    <string name="login_username_hint">请输入您的邮箱号</string>
+    <string name="login_password_hint">请输入您的密码</string>
+    <string name="login_login_text">登       录</string>
+    <string name="login_forget_password_text">忘 记 密 码 ？</string>
+
+    <!--员工管理界面-->
+    <string name="main_top_text">会 员 管 理</string>
+    <string name="main_bottom_tab1">查看员工</string>
+    <string name="main_bottom_tab2">管理员工</string>
 </resources>
